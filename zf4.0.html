@@ -1,0 +1,109 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <style type="text/css">
+    div{
+           width:1200px;margin-left:auto;margin-right:auto;margin:0px;padding:0px;
+           border:solid;     
+        }
+        img{width:inherit;height:inherit}
+        #head{height:200px;}
+        #code{background-color:gainsboro;height:auto;}
+        ul
+        {
+           margin:0px;
+           padding:0px;
+           list-style:none;
+           overflow:hidden;
+        }
+        #code li{float:left;display:block;width:auto;border-left:dotted;margin:0px;}
+        #code a
+        {
+            text-align:center;
+            text-decoration:none;         
+            color:black;
+        }
+        #main_body{height:1600px;}
+        #body1{height:inherit;width:300px; float:left;}
+        #body3{height:inherit;width:300px;float:right;}
+        #body2{height:inherit;margin-right:auto;margin-left:auto}
+        a:hover{background-color:deepskyblue;}
+        .body1{width:inherit;height:100px;}
+        .bodyCenter{width:inherit;height:100px;}
+        #mytime{width:inherit;height:inherit;text-align:center;color:darkmagenta;}
+
+    </style> 
+    <script type="text/javascript">
+        function startTime()
+        {
+        var today=new Date()
+        var h=today.getHours()
+        var m=today.getMinutes()
+        var s=today.getSeconds()
+        m=checkTime(m)
+        s=checkTime(s)
+        document.getElementById('mytime').innerHTML=h+":"+m+":"+s;
+        t=setTimeout('startTime()',10)
+        }
+
+        function checkTime(i)
+        {
+        if (i<10)
+          {i="0" + i}
+          return i
+        }
+    </script>
+    <title>张帆的代码</title>
+</head>
+
+
+<body onload="startTime()">
+    <div id="head">
+        <img src="大雪.jpg" />
+
+    </div>
+    <div id="code">
+        <ul >
+            <li><a>&nbsp;我的代码</a></li>
+            
+            <li class="code1"><a href="#">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;C语言&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </a></li>
+            
+            <li class="code1"><a href="#">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;c++&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </a></li>
+            
+            <li class="code1"><a href="#">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;python&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+            
+            <li class="code1"><a href="#">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Java&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </a></li>
+            
+            <li class="code1"><a href="#">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Android&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </a></li>
+            
+            <li class="code1"><a href="#">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;HTML&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </a></li>
+        </ul>
+    </div>
+    <div id="main_body">
+        <div id="body1" class="body1">
+            <div class="body1" style="background-color:khaki">
+               <p id="mytime"></p>
+                
+            </div>
+
+        </div>
+        <div id="body3">
+            <button>dfd</button>
+            <input  type="checkbox"/>
+
+
+
+        </div>
+        <div id="body2" class="bodyCenter">
+
+            <p>中间还没有想好做什么</p>
+            
+
+
+
+        </div>
+    </div>
+</body>
+</html>
